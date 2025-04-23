@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Wolf's Unlock Game{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Wolf's Unlock Game</h1>
+    <nav class="Seleccion">
+        <a href="/">Inicio</a> |
+        <a href="/pagina1">Mejoracion de Consola</a> |
+        <a href="/pagina2">Usuarios Recientes</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
